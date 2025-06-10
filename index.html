@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Desenvolvimento Web - Aplicação Prática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>DevGuide</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#html" class="nav-link">HTML</a></li>
+                <li><a href="#css" class="nav-link">CSS</a></li>
+                <li><a href="#javascript" class="nav-link">JavaScript</a></li>
+                </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Aprenda Desenvolvimento Web</h2>
+                <p class="hero-subtitle">Domine HTML, CSS e JavaScript com exemplos práticos e interativos</p>
+                <button class="cta-button" id="startLearning">Começar a Aprender</button>
+            </div>
+            <div class="hero-animation">
+                <div class="code-block">
+                    <div class="code-line">&lt;html&gt;</div>
+                    <div class="code-line">&nbsp;&nbsp;&lt;body&gt;</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Olá, Mundo!&lt;/h1&gt;</div>
+                    <div class="code-line">&nbsp;&nbsp;&lt;/body&gt;</div>
+                    <div class="code-line">&lt;/html&gt;</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="html" class="section">
+            <div class="container">
+                <h2 class="section-title">HTML - Estrutura</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>HTML (HyperText Markup Language) é a linguagem de marcação que define a estrutura e o conteúdo das páginas web.</p>
+                        <ul class="feature-list">
+                            <li>Estrutura semântica</li>
+                            <li>Tags e atributos</li>
+                            <li>Acessibilidade</li>
+                            <li>SEO otimizado</li>
+                        </ul>
+                        <button class="demo-button" onclick="showHTMLDemo()">Ver Demonstração</button>
+                    </div>
+                    <div class="demo-area" id="htmlDemo">
+                        <div class="demo-content">
+                            <h3>Exemplo HTML:</h3>
+                            <pre><code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+&lt;a href="#"&gt;Link de exemplo&lt;/a&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="css" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">CSS - Estilização</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>CSS (Cascading Style Sheets) é responsável pela apresentação visual e layout das páginas web.</p>
+                        <ul class="feature-list">
+                            <li>Design responsivo</li>
+                            <li>Animações e transições</li>
+                            <li>Flexbox e Grid</li>
+                            <li>Variáveis CSS</li>
+                        </ul>
+                        <button class="demo-button" onclick="showCSSDemo()">Ver Demonstração</button>
+                    </div>
+                    <div class="demo-area" id="cssDemo">
+                        <div class="css-demo-box" id="cssBox">
+                            <p>Clique no botão para ver o CSS em ação!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="javascript" class="section">
+            <div class="container">
+                <h2 class="section-title">JavaScript - Interatividade</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <p>JavaScript adiciona comportamento dinâmico e interatividade às páginas web.</p>
+                        <ul class="feature-list">
+                            <li>Manipulação do DOM</li>
+                            <li>Eventos do usuário</li>
+                            <li>AJAX e APIs</li>
+                            <li>Programação assíncrona</li>
+                        </ul>
+                        <button class="demo-button" onclick="showJSDemo()">Ver Demonstração</button>
+                    </div>
+                    <div class="demo-area" id="jsDemo">
+                        <div class="js-calculator">
+                            <h3>Calculadora Simples</h3>
+                            <input type="number" id="num1" placeholder="Primeiro número">
+                            <select id="operation">
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="*">×</option>
+                                <option value="/">/</option>
+                            </select>
+                            <input type="number" id="num2" placeholder="Segundo número">
+                            <button onclick="calculate()">Calcular</button>
+                            <div id="result" class="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 DevGuide - Guia de Desenvolvimento Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
